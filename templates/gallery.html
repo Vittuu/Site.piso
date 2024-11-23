@@ -1,0 +1,9 @@
+<h1>Galeria de Fotos</h1>
+<div class="gallery">
+    {% for foto in fotos %}
+    <div>
+        <img src="{{ foto.src }}" alt="{{ foto.alt }}">
+        <p>{{ foto.alt }}</p>
+    </div>
+    {% endfor %}
+</div>
