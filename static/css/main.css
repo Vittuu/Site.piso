@@ -2923,7 +2923,7 @@ input, select, textarea {
 		background-color: #1a3558;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: linear-gradient(45deg, #1a3558 5%, #1a3558 30%, #1a3558);
+		background-image: linear-gradient(45deg, rgb(225, 102, 12) 5%, rgb(45, 103, 164) 30%, rgb(4, 27, 104));
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
@@ -3043,71 +3043,6 @@ input, select, textarea {
 				width: 1px;
 			}
 
-		#header .inner {
-			-moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
-			-webkit-transition: -webkit-transform 1.5s ease, opacity 2s ease;
-			-ms-transition: -ms-transform 1.5s ease, opacity 2s ease;
-			transition: transform 1.5s ease, opacity 2s ease;
-			-moz-transition-delay: 0.25s;
-			-webkit-transition-delay: 0.25s;
-			-ms-transition-delay: 0.25s;
-			transition-delay: 0.25s;
-			-moz-transform: scale(1);
-			-webkit-transform: scale(1);
-			-ms-transform: scale(1);
-			transform: scale(1);
-			opacity: 1;
-			position: relative;
-			z-index: 1;
-		}
-
-			#header .inner .actions {
-				-moz-transition: -moz-transform 1.25s ease;
-				-webkit-transition: -webkit-transform 1.25s ease;
-				-ms-transition: -ms-transform 1.25s ease;
-				transition: transform 1.25s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
-				-moz-transform: translateY(0);
-				-webkit-transform: translateY(0);
-				-ms-transform: translateY(0);
-				transform: translateY(0);
-				opacity: 1;
-			}
-
-		#header:after {
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #1a3558, #1a3558);
-			content: '';
-			height: 100%;
-			left: 0;
-			opacity: 100;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-	body.is-preload #header .inner {
-		-moz-transform: scale(1.05);
-		-webkit-transform: scale(1.05);
-		-ms-transform: scale(1.05);
-		transform: scale(1.05);
-		opacity: 0;
-	}
-
-		body.is-preload #header .inner .actions {
-			-moz-transform: translateY(30em);
-			-webkit-transform: translateY(30em);
-			-ms-transform: translateY(30em);
-			transform: translateY(30em);
-			opacity: 0;
-		}
-
 	body.is-preload #header:after {
 		opacity: 1;
 	}
@@ -3119,7 +3054,7 @@ input, select, textarea {
 		background-color: #1a3558;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: linear-gradient(45deg, #1a3558, #1a3558 50%, #1a3558 95%);
+		background-image: url("http://127.0.0.1:5000/static/css/images/overlay2.png"), url("http://127.0.0.1:5000/static/css/images/overlay3.svg"), linear-gradient(45deg, rgb(225, 102, 12) 5%, rgb(45, 103, 164) 30%, rgb(4, 27, 104));
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
@@ -3352,6 +3287,22 @@ input, select, textarea {
 
 	}
 
+	#footer {
+		text-align: center; /* Centraliza todos os elementos no footer */
+		padding: 20px; /* Espaçamento interno */
+	}
+	
+	#footer p {
+		margin-bottom: 10px; /* Espaçamento entre o texto e o logo */
+	}
+	
+	.logo2 {
+		width: 230px; /* Corrigido para 'px' */
+		height: auto; /* Mantém a proporção da imagem */
+		display: block; /* Certifica-se de que será tratado como um bloco */
+		margin: 0 auto 25px; /* Centraliza e adiciona espaço inferior */
+	}
+	
 /* Small */
 
 	@media screen and (max-width: 736px) {
@@ -3436,6 +3387,13 @@ input, select, textarea {
 	}
 
 /* XSmall */
+		.logo {
+    		width: 85px; /* Largura desejada para o logo */
+   			height: auto; /* Mantém a proporção da imagem */
+    		display: block; /* Certifica-se de que será tratado como um bloco */
+    		margin: 0 auto 10px; /* Centraliza e adiciona espaço inferior */
+		}
+
 
 	@media screen and (max-width: 480px) {
 
