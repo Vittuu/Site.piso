@@ -1,4 +1,3 @@
-@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 /*
@@ -117,7 +116,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #6bd4c8;
+			color: #1a3558;
 		}
 
 	strong, b {
@@ -2106,7 +2105,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #6bd4c8;
+			border-color: #1a3558;
 		}
 
 	select {
@@ -2300,30 +2299,37 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+/* Adicionando gradiente */
+		.icon.brands:before {
+    		font-family: 'Font Awesome 5 Brands';
+		}
+
 		.icon.style1:before {
-			color: #c3e895;
+    		color: #1a3558;
 		}
 
 		.icon.style2:before {
-			color: #8addaa;
+    		color: #1a3558;
 		}
 
 		.icon.style3:before {
-			color: #6bd4c8;
+ 		   color: #1a3558;
 		}
 
 		.icon.style4:before {
-			color: #57aed3;
+    		background: linear-gradient(45deg, #1a3558, #375c7e); /* Azul escuro para azul mediano */
+    		-webkit-text-fill-color: transparent;
 		}
 
 		.icon.style5:before {
-			color: #4a87d3;
+    		background: linear-gradient(45deg, #1a3558, #375c7e); /* Azul escuro para azul mediano */
+    		-webkit-text-fill-color: transparent;
 		}
 
 		.icon.style6:before {
-			color: #6b88e6;
+    		background: linear-gradient(45deg, #1a3558, #375c7e); /* Azul escuro para azul mediano */
+    		-webkit-text-fill-color: transparent;
 		}
-
 		.icon.major {
 			text-decoration: none;
 			color: #555;
@@ -2914,10 +2920,10 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		background-color: #1a3558;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-image: linear-gradient(45deg, #1a3558 5%, #1a3558 30%, #1a3558);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
@@ -3076,11 +3082,11 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+			background-image: linear-gradient(45deg, #1a3558, #1a3558);
 			content: '';
 			height: 100%;
 			left: 0;
-			opacity: 0;
+			opacity: 100;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3110,10 +3116,10 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 6em 0 ;
-		background-color: #4686a0;
+		background-color: #1a3558;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+		background-image: linear-gradient(45deg, #1a3558, #1a3558 50%, #1a3558 95%);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
